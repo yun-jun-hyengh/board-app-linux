@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: prod_php_container
     volumes:
-      - ./uploads:/var/www/html
+      - ./src:/var/www/html
     ports:
       - "127.0.0.1:9000:9000"
     extra_hosts:
