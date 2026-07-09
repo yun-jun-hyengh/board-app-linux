@@ -9,6 +9,13 @@
     $username = 'root';
     $password = '123456';
 
+    // 실서버용
+    /*$host = 'host.docker.internal';
+    $port = '3306';
+    $dbname = 'board';
+    $username = 'jun';
+    $password = '123456';*/
+
     try {
         $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
 
@@ -18,3 +25,4 @@
     } catch (PDOException $e) {
         die("<h1 style='color: red;'> DB 연결실패: " . $e->getMessage() . "</h1>");
     }
+?>
