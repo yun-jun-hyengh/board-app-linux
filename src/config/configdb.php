@@ -3,18 +3,18 @@
     error_reporting(E_ALL);
 
     /* 도커 컨테이너 안에서 내 컴퓨터를 찾아가게 만드는 주소(도메인) */
+    // $host = 'host.docker.internal';
+    // $port = '3306';
+    // $dbname = 'board';
+    // $username = 'root';
+    // $password = '123456';
+
+    // 실서버용
     $host = 'host.docker.internal';
     $port = '3306';
     $dbname = 'board';
-    $username = 'root';
-    $password = '123456';
-
-    // 실서버용
-    /*$host = 'host.docker.internal';
-    $port = '3306';
-    $dbname = 'board';
     $username = 'jun';
-    $password = '123456';*/
+    $password = '123456';
 
     try {
         $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
