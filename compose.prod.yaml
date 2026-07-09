@@ -1,4 +1,4 @@
-service:
+services:
   php:
     build:
       context: .
