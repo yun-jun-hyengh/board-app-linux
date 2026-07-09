@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: prod_php_container
+    network_mode: "host"
     volumes:
       - ./src:/var/www/html
     ports:
