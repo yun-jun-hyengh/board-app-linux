@@ -25,4 +25,18 @@
     } catch (PDOException $e) {
         die("<h1 style='color: red;'> DB 연결실패: " . $e->getMessage() . "</h1>");
     }
+
+    /*
+
+    CREATE TABLE php_board(
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(100),
+        content TEXT,
+        writer VARCHAR(50),
+        filename TEXT,
+        filepath TEXT,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+
+    */
 ?>
